@@ -1,8 +1,6 @@
 package com.example.demo.redis;
 
-import org.springframework.cache.CacheManager;
 import org.springframework.cache.annotation.EnableCaching;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
@@ -14,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @EnableCaching
 public class RedisCacheConfig {
-    @Bean
+    /*@Bean
     public CacheManager cacheManager(RedisTemplate<?, ?> redisTemplate){
         CacheManager cacheManager = new RedisCacheManager(redisTemplate);
         return cacheManager;
@@ -30,6 +28,6 @@ public class RedisCacheConfig {
         redisTemplate.setKeySerializer(redisSerializer);
         redisTemplate.setHashKeySerializer(redisSerializer);
         return redisTemplate;
-    }
+    }*/
 
 }
